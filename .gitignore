@@ -1,0 +1,60 @@
+###.gitignore (vgorshkov ver.20260129)
+
+# Локальные файлы Terraform
+**/.terraform/
+**/.terraform.lock.hcl
+
+# Файлы планов
+*.tfplan
+*.tfstate
+*.tfstate.*
+
+# Файлы с переменными окружения
+#*.tfvars
+*.tfvars.json
+
+# Файлы с чувствительными данными (пароли, ключи)
+**/.terraformrc
+terraform.rc
+**/override.tf
+**/override.tf.json
+**/*_override.tf
+**/*_override.tf.json
+**/*.authorized-key.json
+**/*-key.json
+**/*.pem
+**/*.key
+
+# Файлы crash логов
+crash.log
+crash.*.log
+
+# Кэш плагинов
+**/.terraform/providers/
+
+# CLI конфигурационные файлы
+.terraformrc
+terraform.rc
+
+# Временные файлы редакторов
+**/.variables.tf.swp
+**/.*.swp
+**/.*.swo
+**/*~
+**/.DS_Store
+
+# IDE директории
+**/.idea/
+**/.vscode/
+**/*.iml
+
+# Логи
+terraform.log
+*.log
+
+# Резервные копии
+*~
+*.backup
+*.bak
+
+
