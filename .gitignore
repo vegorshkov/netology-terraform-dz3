@@ -58,3 +58,5 @@ terraform.log
 *.bak
 
 
+**/personal.auto.tfvars_example
+
