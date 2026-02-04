@@ -8,5 +8,5 @@ disk_vm.tf: Исправлено, ни где не было  hostname = "storage
 
 Так же получен файл inventory.ini в котором отображены все виртуальные машины.
 
-Все результаты зафиксированнына print screens в разделе https://github.com/vegorshkov/netology-terraform-dz3/tree/main/task4 
+Все результаты зафиксированны на print screens в разделе https://github.com/vegorshkov/netology-terraform-dz3/tree/main/task4 
 

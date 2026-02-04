@@ -15,7 +15,7 @@
 Ключевая информация отображена в https://github.com/vegorshkov/netology-terraform-dz3/blob/main/task3/README.md
 
 Задание №4
-Все ключевые момент фиксированы на принтскринах, так же составленократкое описание в комментариях и  в README.md в папке task4
+Все ключевые момент фиксированы на принтскринах, так же составлено краткое описание в комментариях и  в README.md в папке task4
 https://github.com/vegorshkov/netology-terraform-dz3/tree/main/task4 
 
 Задание №5
