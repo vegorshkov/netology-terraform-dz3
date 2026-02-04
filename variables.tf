@@ -30,3 +30,16 @@ variable "vpc_name" {
   default     = "develop"
   description = "VPC network&subnet name"
 }
+
+variable "web_vm_base_name" {
+  type        = string
+  default     = "web"
+  description = "vpc name for web virtuls"
+}
+
+variable "vm_image_family" {
+  type        = string
+  default     = "ubuntu-2004-lts"
+  description = "Образ OS VM"
+}
+
