@@ -19,3 +19,9 @@
 https://github.com/vegorshkov/netology-terraform-dz3/tree/main/task4 
 
 Задание №5
+Добавим файл output.tf  (и создадим  нем вывод информации), получим информацию о созданных машинах.
+
+Ответ: https://github.com/vegorshkov/netology-terraform-dz3/blob/main/task5/terraform_output.png
+
+Задача №6
+
