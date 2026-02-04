@@ -27,6 +27,7 @@ resource "yandex_compute_instance" "db" {
   }
 
   name        = each.value.vm_name
+  hostname    = each.value.vm_name # добавил hostname
   allow_stopping_for_update = true
   platform_id = "standard-v1"
   zone        = var.default_zone

@@ -2,6 +2,7 @@ resource "yandex_compute_instance" "web" {
   count = 2  #  count loop  это задает сколько значений получит переменная count.index  
   
   name        = "web-${count.index + 1}"  # здесь описывается мета аргумент как "web-" + "номер+1"
+  hostname    = "web${count.index + 1}"   # задаем имя хоста
   allow_stopping_for_update = true
   platform_id = "standard-v1"
   zone        = var.default_zone

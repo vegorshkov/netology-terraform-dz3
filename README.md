@@ -11,3 +11,11 @@
 Машины созданы, параметры заданы через переменные, использован  count=2 и count.index который возвращает значение 0, 1,...  так как 2 то 2 значения, функция file в local-переменной для считывания ключа. Обновлен ключ через "yc iam create-token"
 
 Задание №3
+Выполнено.
+Ключевая информация отображена в https://github.com/vegorshkov/netology-terraform-dz3/blob/main/task3/README.md
+
+Задание №4
+Все ключевые момент фиксированы на принтскринах, так же составленократкое описание в комментариях и  в README.md в папке task4
+https://github.com/vegorshkov/netology-terraform-dz3/tree/main/task4 
+
+Задание №5

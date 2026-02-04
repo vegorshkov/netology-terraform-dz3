@@ -12,6 +12,7 @@ resource "yandex_compute_disk" "storage_disks" {
 # Создаем виртуальную машину "storage"
 resource "yandex_compute_instance" "storage" {
   name        = "storage"
+  hostname    = "storage"  #   добавил имя хоста
   allow_stopping_for_update = true
   platform_id = "standard-v1"
   zone        = var.default_zone
