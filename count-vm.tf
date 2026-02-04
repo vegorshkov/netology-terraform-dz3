@@ -2,14 +2,19 @@ resource "yandex_compute_instance" "web" {
   count = 2  #  count loop  это задает сколько значений получит переменная count.index  
   
   name        = "web-${count.index + 1}"  # здесь описывается мета аргумент как "web-" + "номер+1"
+  allow_stopping_for_update = true
   platform_id = "standard-v1"
   zone        = var.default_zone
 
   resources {
     cores  = 2
     memory = 1
-    core_fraction = 5
+    core_fraction = 20
   }
+
+  scheduling_policy {
+    preemptible = true
+  }  
 
   boot_disk {
     initialize_params {
