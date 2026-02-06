@@ -40,5 +40,5 @@ https://github.com/vegorshkov/netology-terraform-dz3/blob/main/task8/README.md
 Ошибки найдены описание по ссылке выше.
 
 Задача №9 
-Коданды собраны здесь
+Команды собраны здесь
 https://github.com/vegorshkov/netology-terraform-dz3/blob/main/task9/commandos.txt
