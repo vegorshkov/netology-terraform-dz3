@@ -1,14 +1,21 @@
-[gr_web]
-%{ for vm in gr_web }
+[webservers]
+%{ for vm in webservers }
 ${vm.name} ansible_host=${vm.network_interface[0].ip_address} fqdn=${vm.fqdn}
 %{ endfor }
 
-[gr_db]
-%{ for vm in gr_db }
+[databases]
+%{ for vm in databases }
 ${vm.name} ansible_host=${vm.network_interface[0].ip_address} fqdn=${vm.fqdn}
 %{ endfor }
 
-[gr_storage]
-%{ for vm in gr_storage }
+[storage_servers]
+%{ for vm in storage }
 ${vm.name} ansible_host=${vm.network_interface[0].ip_address} fqdn=${vm.fqdn}
 %{ endfor }
+
+[bastion_host]
+${bastion_name} ansible_host=${bastion_ip}
+
+[all:vars]
+ansible_ssh_user=ubuntu
+ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p -q ubuntu@${bastion_ip}"'

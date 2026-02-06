@@ -1,0 +1,14 @@
+---
+- name: Test Ansible connectivity via bastion
+  gather_facts: false
+  hosts: webservers
+  vars:
+    ansible_ssh_user: ubuntu
+  
+  tasks:
+    - name: Test SSH connection
+      ansible.builtin.ping:
+      
+    - name: Display connection info
+      ansible.builtin.debug:
+        msg: "Connected to {{ inventory_hostname }} via bastion"

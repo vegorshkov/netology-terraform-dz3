@@ -43,3 +43,9 @@ variable "vm_image_family" {
   description = "Образ OS VM"
 }
 
+variable "ssh_public_key" {
+  type        = string
+  default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGsV4FbyZ3PqkzeSGNvDLFHBY7xv8t4oWavwhzwqErDe vgorshkov@gid-000455"
+  description = "SSH public key for all VMs"
+}
+

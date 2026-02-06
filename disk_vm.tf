@@ -36,11 +36,29 @@ resource "yandex_compute_instance" "storage" {
 
   network_interface {
     subnet_id = yandex_vpc_subnet.develop.id
+    nat = local.nat_enable_ext_ip
+  }
 
+  # Provisioner для принудительной установки ключа
+  connection {
+    type        = "ssh"
+    user        = "ubuntu"
+    host        = self.network_interface[0].nat_ip_address
+    private_key = file("/home/vgorshkov/.ssh/netology-ext-key")
+    timeout     = "10m"
+  }
+
+  provisioner "remote-exec" {
+    inline = [
+      "mkdir -p ~/.ssh",
+      "echo '${local.ssh_public_key}' > ~/.ssh/authorized_keys",
+      "chmod 600 ~/.ssh/authorized_keys"
+    ]
   }
 
   metadata = {
     ssh-keys = "ubuntu:${local.ssh_public_key}"
+    user-data = local.cloud_init_config
   }
 
   # Динамическое подключение созданных дисков

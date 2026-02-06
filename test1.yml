@@ -1,0 +1,10 @@
+---
+- name: Test playbook
+  hosts: webservers
+  gather_facts: false
+  vars:
+    ansible_ssh_user: ubuntu
+  
+  tasks:
+    - name: Test ping
+      ansible.builtin.ping:

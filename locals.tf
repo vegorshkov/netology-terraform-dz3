@@ -1,3 +1,4 @@
 locals {
-  ssh_public_key = file("/home/vgorshkov/.ssh/netology-ext-key.pub")  #  Используем функцию file в local-переменной для считывания ключа 
+  ssh_public_key = var.ssh_public_key
+  nat_enable_ext_ip = true
 }
