@@ -10,6 +10,6 @@ concat(slice(local.vpc.subnet_zones, 0, 2),slice(local.vpc.subnet_zones, 3, leng
       slice(local.vpc.subnet_ids, 3, length(local.vpc.subnet_ids))
     )
     subnet_zones = concat(
-      slice(local.vpc.subnet_zones, 0, length(local.vpc.subnet_zones)-1)
+      slice(local.vpc.subnet_zones, 0, length(local.vpc.subnet_zones)-2)
     )
   }
