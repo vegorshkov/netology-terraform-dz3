@@ -25,3 +25,20 @@ https://github.com/vegorshkov/netology-terraform-dz3/tree/main/task4
 
 Задача №6
 
+https://github.com/vegorshkov/netology-terraform-dz3/tree/main/task6#readme
+
+Проблемма была в передаче ключей на хосты, но они туда передались. И получилось удаленно подключиться.
+
+Задача №7
+https://github.com/vegorshkov/netology-terraform-dz3/blob/main/task7/%D0%9E%D1%82%D0%B2%D0%B5%D1%82.png
+
+Поочередно проверил вывод через переменные, выполнил операцию исключения из массива 3 элемента,   а далее   использовал объединение.
+
+Задача №8
+https://github.com/vegorshkov/netology-terraform-dz3/blob/main/task8/README.md
+
+Ошибки найдены описание по ссылке выше.
+
+Задача №9 
+Коданды собраны здесь
+https://github.com/vegorshkov/netology-terraform-dz3/blob/main/task9/commandos.txt
